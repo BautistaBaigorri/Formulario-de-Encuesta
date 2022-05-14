@@ -1,0 +1,130 @@
+@import
+  url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+
+html,
+body {
+  background-color: #0CCE6B;
+  text-align: center;
+  color: #363537;
+  font-family: 'Stylish', sans-serif;
+  min-width: 250px;
+}
+
+header {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 40px;
+}
+
+#fondo-formulario {
+  background-color: #DCED31;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 70%;
+  max-width: 800px;
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  vertical-align: middle;  
+}
+
+.input-field {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1em;
+  background-color: #DCED31;
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid #0CCE6B;
+  border-radius: 20px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.dropdown {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1em;
+  background-color: #DCED31;
+  height: 35px;
+  width: 190px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 2px solid #0CCE6B;
+  border-radius: 20px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+  }
+
+#submit {
+  background-color: #0CCE6B;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Stylish', sans-serif;
+  font-size: 2em;
+  height: 45px;
+  width: 120px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#sugerencias {
+  border-radius: 8px;
+}
+@media (max-width: 900px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding-left: 150px;
+}

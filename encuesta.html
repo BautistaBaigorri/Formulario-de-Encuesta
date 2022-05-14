@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="./encuesta.css" />
+
+<h1 id="title">Encuesta Saludable</h1>
+
+<div id="fondo-formulario">
+  <p id="description">
+    Esta encuesta se va a llevar a cabo a un grupo reducido de personas, cetrandonos en sus hábitos alimenticios.
+  </p>
+  
+  <form id="survey-form">
+    <div>
+      <div class="labels">
+        <label id="name-label" for="name"> Nombre: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Escribe tu nombre" required>
+      </div>
+    </div>
+   
+    <div>
+      <div class="labels">
+        <label id="email-label" for="email"> Correo: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Escribe tu correo">
+      </div>
+    </div>
+    
+    <div>
+      <div class="labels">
+        <label id="number-label" for="number"> Edad </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="number" id="number" min="00000001" max="99999999" class="input-field" placeholder="Escribe tu Edad">
+      </div>
+    </div>
+    
+    <div>
+      <div class="labels">
+        <label for="sexo"> Sexo</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="sexo" class="dropdown">
+      <option disabled selected value>Seleccione una opcion</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Masculino">Masculino</option>
+    </select>
+      </div>
+    </div>
+    
+    <div>
+      <div class="labels">
+        <label for="userRating"> ¿Por qué decidiste ser vegano?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Por Salud<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Por el cuidado de los animales<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Por el medio ambiente<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gustos">¿Cuantas porciones de frutas consumes al día o a la semana?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="gustos" class="dropdown">
+      <option disabled selected value>Seleccione una opcion</option>
+      <option value="1a2">1 a 2 al día</option>
+      <option value="3a5">3 a 5 al día</option>
+      <option value="4fru">consumo fruta 4 veces la semana</option>
+      <option value="menos4">consumo menos de 4 días a la semana</option>
+      <option value="nofru">no consumo fruta</option>
+    </select>
+      </div>
+    </div>
+    
+        <div>
+      <div class="labels">
+        <label for="preferencias">¿Consumes algún otro suplemento?<br>(Escoja las que crea necesarias): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferencias" style="list-style: none;">
+          <li class="checkbox"><label><input name="pref" value="1" type="checkbox" class="userRatings">Vitamina D</label></li>
+          <li class="checkbox"><input name="pref" value="2" type="checkbox" class="userRatings">Vitamina E</li>
+          <li class="checkbox"><label><input name="pref" value="3" type="checkbox" class="userRatings">Hierro</label></li>
+          <li class="checkbox"><label><input name="pref" value="4" type="checkbox" class="userRatings">Zinc</label></li>
+          <li class="checkbox"><label><input name="pref" value="5" type="checkbox" class="userRatings">Calcio</label></li>
+          <li class="checkbox"><label><input name="pref" value="6" type="checkbox" class="userRatings">Suplemento multivitamínico</label></li>
+          <li class="checkbox"><label><input name="pref" value="7" type="checkbox" class="userRatings">Omega 3</label></li>
+          <li class="checkbox"><label><input name="pref" value="8" type="checkbox" class="userRatings">Otro</label></li>
+        </ul>
+      </div>
+    </div>
+   
+    <div>
+      <div class="labels">
+        <label for="comments">Tienes algun comentario o sugerencia?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="sugerencias" class="input-field" style="height:50px;resize:vertical;" name="comentario" placeholder="Escribe tu sugerencia o comentario"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</div>
+<div>
+  <footer>Copyright © 2022 Bautista Baigorri</footer>
+</div>
